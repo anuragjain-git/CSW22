@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outermost * { 
+            display: block;
+            border: 2px solid lightgrey;
+            color: green;
+            padding: 6px;
+            margin: 20px;
+        }
+</style>
+
+</head>
+<body>
+
+    <!-- <p>Using parent()</p> -->
+    <div class="btn-div">
+        <button class="btn-1">parent()</button>
+        <button class="btn-2">parents()</button><br><br>
+        <input type="text" class="input-1">
+        <button class="btn-3">parentsUntil()</button>
+    </div>
+
+    <div class="outermost">
+        <div class="greatgrandparent">GreatGrandParent
+            <div class="grandparent">GrandParent
+                <div class="parent">Parent
+                    <div class="child">
+                        Child
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <p>Using parents()</p> -->
+   
+
+    <!-- <div class="outermost">
+        <div class="greatgrandparent-1">GreatGrandParent
+            <div class="grandparent-1">GrandParent
+                <div class="parent-1">Parent
+                    <div class="child-1">
+                        Child
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <p>Using parentsUntil()</p>
+
+
+    <div class="outermost">
+        <div class="greatgrandparent-2">GreatGrandParent
+            <div class="grandparent-2">GrandParent
+                <div class="parent-2">Parent
+                    <div class="child-2">
+                        Child
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+Using find()
+
+<input type="text" class="find-input">
+<button class="find-btn">find()</button>
+
+    <div class="div1">
+        <div class="div2">
+            <p class="p1">P1</p>
+            <p class="p2">P2</p>
+            <p class="p3">P3</p>
+            <p class="p4">P4</p>
+        </div>
+    </div>
+
+
+
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
